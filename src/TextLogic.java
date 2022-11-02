@@ -1,5 +1,3 @@
-import static org.junit.Assert.assertEquals;
-
 public class TextLogic {
 
     private int charCount;
