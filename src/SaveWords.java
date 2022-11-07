@@ -8,7 +8,7 @@ public class SaveWords {
         TextLogic textLogic = new TextLogic();
         String input;
         System.out.println("Hej och välkommen! Skriv in ord som du vill spara, skriv stop när du känner dig färdig!");
-        while (textLogic.getStop()) {
+        while (!textLogic.getStop()) {
             input = sc.nextLine();
             textLogic.addLineCount();
             textLogic.addCharCount(input);
