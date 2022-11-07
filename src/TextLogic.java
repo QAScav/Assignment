@@ -4,7 +4,7 @@ public class TextLogic {
     private int LineCount;
     private String longestWord;
 
-    private boolean isStopped = false;
+    private boolean isStopped = true;
 
     public TextLogic() {
         LineCount = 0;
@@ -47,7 +47,7 @@ public class TextLogic {
 
     public void ifStop(String userInput) {
         if (userInput.equals("stop") || userInput.equals("Stop")) {
-            isStopped = true;
+            isStopped = false;
             //Håller koll på om ordet stop skrivs eller inte, flippar en bool
         }
     }
